@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>5.5.11</title>
+  </head>
+  <body>
+    <input type="text" id="form">
+    <p id="text"></p>
+  </body>
+  <script type="text/javascript">
+    var form = document.getElementById("form");
+    form.addEventListener("input", function () {
+      var pElem = document.getElementById("text");
+      document.body.style.backgroundColor = form.value;
+      pElem.innerHTML = form.value;
+    })
+  </script>
+</html>
